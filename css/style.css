@@ -1,10 +1,349 @@
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+:root {
+  --basic-black: #000000;
+  --basick-gray: #A6A6A6;
+  --basick-white: #FFFFFF;
+
+  --text-color: #283136;
+  --text-catalog: #666666;
+  --text-footer: #444444;
+  --icon-footer: #E1E1E1;
+
+  --light-red: #FB565A;
+  --red: #E74246;
+  --dark-red: #D7373B;
+
+  --light-green: #00CA74;
+  --green: #00BC6C;
+  --dark-green: #00AA62;
+
+  --light-yellow: #EFC84A;
+  --yellow: #EAB534;
+  --dark-yellow: #E5A722;
+
+  --light-gray: #EEEEEE;
+  --gray: #DFDFDF;
+  --dark-gray: #D5D5D5;
+}
+
+/* Общие стили */
+
+body {
+  min-width: 1460px;
+  margin: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили header */
+
+.header-logo svg:active {
+  fill: var(--basick-gray);
+}
+
+.navigation {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--light-gray);
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cart {
+  padding-left: 25px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.site-navigation__link:visited,
+.cart:visited {
+  color: var(--basic-black);
+}
+
+.site-navigation__link:hover,
+.cart:hover {
+  color: var(--light-red);
+}
+
+.site-navigation__link:active,
+.cart:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.active {
+  border-bottom: 2px solid var(--light-red);
+}
+
+/* Стили для Продуктов */
+
+.product-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.product {
+  padding-top: 165px;
+}
+
+.product:nth-child(1) {
+  background-image: url("../img/icon-web.png");
+  background-repeat: no-repeat;
+}
+
+.product:nth-child(2) {
+  background-image: url("../img/icon-app.png");
+  background-repeat: no-repeat;
+}
+
+.product:nth-child(3) {
+  background-image: url("../img/icon-presentation.png");
+  background-repeat: no-repeat;
+}
+
+.product__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.product__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.product__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basick-white);
+}
+
+.product:nth-child(1) .product__button {
+  background-color: var(--light-red);
+}
+
+.product:nth-child(1) .product__button:hover {
+  background-color: var(--red);
+}
+
+.product:nth-child(1) .product__button:active {
+  background-color: var(--dark-red);
+}
+
+.product:nth-child(2) .product__button {
+  background-color: var(--light-green);
+}
+
+.product:nth-child(2) .product__button:hover {
+  background-color: var(--green);
+}
+
+.product:nth-child(2) .product__button:active {
+  background-color: var(--dark-green);
+}
+
+
+.product:nth-child(3) .product__button {
+  background-color: var(--light-yellow);
+}
+
+.product:nth-child(3) .product__button:hover {
+  background-color: var(--yellow);
+}
+
+.product:nth-child(3) .product__button:active {
+  background-color: var(--dark-yellow);
+}
+
+
+/* Стили footer */
+
+.social-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item__button {
+  background-color: var(--icon-footer);
+}
+
+.social-item__button:hover {
+  background-color: var(--red);
+}
+
+.social-item__button:active {
+  background-color: var(--dark-red);
+}
+
+.social-item:nth-child(1) .social-item__button {
+
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item:nth-child(2) .social-item__button {
+
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-item:nth-child(3) .social-item__button {
+
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.promo-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--text-footer);
+}
+
+/* Каталог */
+
+.catalog-title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--light-gray);
+}
+
+/* Фильтр */
+
+.filter legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--basic-black);
+}
+
+.grid label,
+.features label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.grid-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.features-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter-button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--light-gray);
+  border: none;
+}
+
+.filter-button:hover {
+  background-color: var(--gray);
+}
+
+.filter-button:active {
+  background-color: var(--dark-gray);
+}
+
+/* Список шаблонов */
+
+.catalog-item__description {
+  background-color: var(--light-gray);
+}
+
+.catalog-item__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.catalog-item__title:hover {
+  color: var(--light-red);
+}
+
+.catalog-item__title:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.catalog-item__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-catalog);
+}
+
+.catalog-item__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basick-white);
+  background-color: var(--light-red);
+}
+
+.catalog-item__button:hover {
+  background-color: var(--red);
+}
+
+.catalog-item__button:active {
+  background-color: var(--dark-red);
+}
