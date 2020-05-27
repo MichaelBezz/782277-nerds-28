@@ -5,8 +5,14 @@
 
   --text-color: #283136;
   --text-catalog: #666666;
-  --text-footer: #444444;
+
   --icon-footer: #E1E1E1;
+  --icon-range: #231F20;
+  --icon-border: #DBDBDB;
+
+  --input-border: #D7DCDE;
+  --input-hover: #B4B9BB;
+  --input-text: #444444;
 
   --light-red: #FB565A;
   --red: #E74246;
@@ -24,6 +30,7 @@
   --gray: #DFDFDF;
   --dark-gray: #D5D5D5;
 }
+
 
 /* Общие стили */
 
@@ -46,7 +53,8 @@ img {
   height: auto;
 }
 
-/* Стили header */
+
+/* header */
 
 .header-logo svg:active {
   fill: var(--basick-gray);
@@ -74,6 +82,11 @@ img {
   background-position: left;
 }
 
+.site-navigation__link,
+.cart {
+  color: var(--basic-black);
+}
+
 .site-navigation__link:visited,
 .cart:visited {
   color: var(--basic-black);
@@ -94,7 +107,75 @@ img {
   border-bottom: 2px solid var(--light-red);
 }
 
-/* Стили для Продуктов */
+
+/* Слайдер */
+
+.slides {
+  background-color: var(--light-gray);
+}
+
+.slide-item {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: var(--light-gray);
+}
+
+.slide-item:nth-of-type(1) {
+  background-image: url("../img/slide-1.png");
+}
+
+.slide-item:nth-of-type(2) {
+  background-image: url("../img/slide-2.png");
+}
+
+.slide-item:nth-of-type(3) {
+  background-image: url("../img/slide-3.png");
+}
+
+.slide-item__title {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.slide-item__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.slide-item__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basick-white);
+  text-align: center;
+  background-color: var(--light-red);
+}
+
+.slide-item__button:hover {
+  background-color: var(--red);
+}
+
+.slide-item__button:active {
+  background-color: var(--dark-red);
+}
+
+.slides-switches {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slide-radio__button {
+  border: none;
+}
+
+
+/* Продукты */
 
 .product-list {
   padding: 0;
@@ -183,7 +264,136 @@ img {
 }
 
 
-/* Стили footer */
+/* О нас */
+
+.about__title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.order-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.order-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.order-list__item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+
+/* Преимущества */
+
+.advantages-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.advantages-table__row:nth-of-type(1) {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.advantages-table__row sup {
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.advantages-table__row:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-color);
+}
+
+
+/* Клиенты */
+
+.partner-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.partner-item {
+  opacity: 0.2;
+}
+
+.partner-item:hover {
+  opacity: 1;
+}
+
+.partner-item:active {
+  opacity: 0.1;
+}
+
+
+/* Адрес */
+
+.pointer {
+  background-image: url("../img/map-marker.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-contacts__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.footer-contacts__address,
+.footer-contacts__telephone {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--text-catalog);
+}
+
+.footer-contacts__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basick-white);
+  text-align: center;
+  background-color: var(--light-red);
+  border: none;
+}
+
+.footer-contacts__button:hover {
+  background-color: var(--red);
+}
+
+.footer-contacts__button:active {
+  background-color: var(--dark-red);
+}
+
+
+/* footer */
 
 .social-list {
   padding: 0;
@@ -204,21 +414,18 @@ img {
 }
 
 .social-item:nth-child(1) .social-item__button {
-
   background-image: url("../img/vk-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-item:nth-child(2) .social-item__button {
-
   background-image: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social-item:nth-child(3) .social-item__button {
-
   background-image: url("../img/insta-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -235,8 +442,78 @@ img {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: var(--text-footer);
+  color: var(--input-text);
 }
+
+
+/* modal */
+
+.modal-title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: auto;
+  color: var(--basic-black);
+}
+
+.feedback-form__item input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--input-text);
+  border: 2px solid var(--input-border);
+}
+
+.feedback-form__item input:hover {
+  color: var(--input-text);
+  border: 2px solid var(--input-hover);
+}
+
+.feedback-form__item input:focus {
+  color: var(--basic-black);
+  border: 2px solid var(--basic-black);
+}
+
+.feedback-form label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: var(--basic-black);
+}
+
+.feedback-form__button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basick-white);
+  text-align: center;
+  background-color: var(--light-red);
+  border: none;
+}
+
+.feedback-form__button:hover {
+  background-color: var(--red);
+}
+
+.feedback-form__button:active {
+  background-color: var(--dark-red);
+}
+
+.close-button {
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  opacity: 0.3;
+}
+
+.close-button:hover {
+  opacity: 1;
+}
+
+.close-button:active {
+  opacity: 0.1;
+}
+
 
 /* Каталог */
 
@@ -249,6 +526,7 @@ img {
   background-color: var(--light-gray);
 }
 
+
 /* Фильтр */
 
 .filter legend {
@@ -258,6 +536,15 @@ img {
   text-transform: uppercase;
   text-align: left;
   color: var(--basic-black);
+}
+
+.cost label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
 
 .grid label,
@@ -300,7 +587,77 @@ img {
   background-color: var(--dark-gray);
 }
 
+
+/* Сортировка */
+
+.sort-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.breadcrumbs-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs-item a,
+.breadcrumbs-item a:visited {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs-item a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-item a:active,
+.breadcrumbs-item .active-sort {
+  opacity: 1;
+}
+
+.range-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.range-icon {
+  fill: var(--basick-gray);
+  opacity: 0.2;
+}
+
+.range-icon:hover {
+  opacity: 1;
+}
+
+.range-icon:active,
+.active-range {
+  fill: var(--icon-range);
+  opacity: 1;
+}
+
+
 /* Список шаблонов */
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
 
 .catalog-item__description {
   background-color: var(--light-gray);
@@ -346,4 +703,35 @@ img {
 
 .catalog-item__button:active {
   background-color: var(--dark-red);
+}
+
+
+/* Постраничная навигация */
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--light-gray);
+}
+
+.pagination-item a:hover {
+  background-color: var(--gray);
+}
+
+.pagination-item a:active {
+  background-color: var(--dark-gray);
+}
+
+.active-list a {
+  background-color: transparent;
+  border: 3px solid var(--icon-border);
 }
