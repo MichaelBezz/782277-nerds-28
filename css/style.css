@@ -737,14 +737,15 @@ img {
 /* Sort */
 
 .sort {
-  display: grid;
-  grid-template-columns: 354px 272px 40px;
+  display: flex;
   align-items: center;
-  gap: 47px;
+  justify-content: space-between;
 }
 
 
 .sort-title {
+  width: 160px;
+  margin-right: 220px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
@@ -756,6 +757,7 @@ img {
   display: flex;
   justify-content: space-between;
 
+  width: 300px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -784,6 +786,7 @@ img {
   display: flex;
   justify-content: space-between;
 
+  width: 40px;
   padding: 0;
   margin: 0;
   list-style: none;
