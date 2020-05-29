@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -12,9 +12,10 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
-    <nav class="navigation">
+    <nav class="navigation container">
+
       <a class="header-logo" aria-label="Главная страница сайта Нёрдс">
         <svg xmlns="http://www.w3.org/2000/svg" width="160" height="65" viewBox="0 0 160 65">
           <path
@@ -23,6 +24,7 @@
             d="M113.207 26.161a86.988 86.988 0 0 0-1.115 7.531c-1.059 10.06-.612 18.996.613 22.986.726 2.137 3.457 4.946 6.078 2.023 2.843-3.203 5.967-1.349 2.174 2.416-2.34 2.305-6.689 3.878-11.039 3.428-3.123-.393-5.018-2.415-6.134-5.505-.444.898-.947 1.685-1.56 2.302-2.119 2.193-4.685 3.43-7.974 3.092-6.637-.73-10.538-7.923-8.699-18.153 1.952-10.791 11.319-14.725 16.728-11.857.112-1.349.223-2.699.335-4.104.055-.281.055-.562.11-.843a96.962 96.962 0 0 1-4.962.956C73.787 34.423 82.04 14.864 87.894 9.75c6.636-5.733 7.36-1.855 5.297-.562-3.68 2.36-5.297 15.905 5.241 15.905 1.729 0 3.346-.112 4.962-.281C106.685 6.49 116.665-2.391 124.75.532c8.976 3.26 8.029 17.535-11.543 25.629zm-10.928 24.393c-.224-3.542-.224-7.532-.167-11.636 0-.506.056-1.011.056-1.461-3.346-1.518-6.635 3.653-7.473 10.792-.946 8.373 2.788 12.813 4.908 10.791 1.617-1.631 2.453-6.803 2.676-8.486zm24.086-43.165c-1.784-2.642-8.307.562-12.098 14.332 9.535-4.554 13.326-12.422 12.098-14.332z" />
         </svg>
       </a>
+
       <ul class="site-navigation">
         <li class="site-navigation__item">
           <a class="site-navigation__link" href="blank.html">Студия</a>
@@ -37,7 +39,11 @@
           <a class="site-navigation__link" href="blank.html">Контакты</a>
         </li>
       </ul>
-      <a class="cart" href="blank.html">Корзина</a>
+
+      <div class="cart">
+        <a href="blank.html">Корзина</a>
+      </div>
+
     </nav>
   </header>
 
@@ -83,7 +89,7 @@
       </ul>
     </section>
 
-    <section class="product-section">
+    <section class="product-section container">
       <h2 class="visually-hidden">Мы создаем</h2>
       <ul class="product-list">
         <li class="product">
@@ -168,44 +174,54 @@
 
   <footer class="main-footer">
 
+
     <section class="footer-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img src="img/map.png" width="1440" height="416" alt="Карта с адресом Нёрдс">
-      <div class="pointer">
-        <span>Указатель адреса на карте</span>
+      <div class="footer-map__pointer">
+        <span class="visually-hidden">Указатель адреса на карте</span>
       </div>
+
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <b class="footer-contacts__title">NЁRDS DESIGN STUDIO</b>
+        <p class="footer-contacts__address">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8
+        </p>
+        <p class="footer-contacts__telephone">тел. +7 (812) 275-75-75</p>
+        <button class="footer-contacts__button" type="button">Напишите нам</button>
+      </section>
+
     </section>
 
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <b class="footer-contacts__title">NЁRDS DESIGN STUDIO</b>
-      <p class="footer-contacts__address">
-        191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8
-      </p>
-      <p class="footer-contacts__telephone">тел. +7 (812) 275-75-75</p>
-      <button class="footer-contacts__button" type="button">Напишите нам</button>
-    </section>
+    <div class="footer-info container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-item__button" href="blank.html" aria-label="Наш паблик ВКонтакте">
+              <span class="visually-hidde">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-item__button" href="blank.html" aria-label="Дружите с нами в Facebook">
+              <span class="visually-hidde">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-item__button" href="blank.html" aria-label="Смотрите наши работы в Instagram">
+              <span class="visually-hidde">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-    <section class="footer-social">
-      <h2 class="visually-hidden">Давайте дружить!</h2>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-item__button" href="blank.html" aria-label="Наш паблик ВКонтакте"><span
-              class="visually-hidden">ВКонтакте</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-item__button" href="blank.html" aria-label="Дружите с нами в Facebook"><span
-              class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-item__button" href="blank.html" aria-label="Смотрите наши работы в Instagram"><span
-              class="visually-hidden">Инстаграм</span></a>
-        </li>
-      </ul>
-      <b class="promo-title">Давайте дружить, это выгодно!</b>
-      <p class="promo-text">Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+      <section class="footer-promo">
+        <b class="footer-promo__title">Давайте дружить, это выгодно!</b>
+        <p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
 
   </footer>
 
