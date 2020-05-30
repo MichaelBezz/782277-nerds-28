@@ -1034,10 +1034,6 @@ img {
 }
 
 .pagination-item {
-  max-width: 50px;
-  max-height: 50px;
-
-  padding: 17px 20px;
   margin-right: 10px;
 
   background-color: var(--light-gray);
@@ -1045,15 +1041,22 @@ img {
 }
 
 .pagination-item a {
+  display: inline-block;
+
+  height: 50px;
+  min-width: 50px;
+
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 50px;
   text-align: center;
+  vertical-align: middle;
   color: var(--basic-black);
 }
 
 .pagination-item:last-child {
-  padding: 17px 77px;
+  min-width: 260px;
+  text-align: center;
 }
 
 .pagination-item:hover {
