@@ -622,7 +622,16 @@ img {
 }
 
 .social-item__button {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
   background-color: var(--icon-footer);
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social-item__button:hover {
@@ -633,22 +642,16 @@ img {
   background-color: var(--dark-red);
 }
 
-.social-item:nth-child(1) .social-item__button {
+.vk {
   background-image: url("../img/vk-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.social-item:nth-child(2) .social-item__button {
+.fb {
   background-image: url("../img/fb-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.social-item:nth-child(3) .social-item__button {
+.inst {
   background-image: url("../img/insta-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .footer-promo__title {
