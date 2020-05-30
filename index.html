@@ -52,41 +52,54 @@
 
     <section class="slides">
       <h2 class="visually-hidden">Слайды с принципами студии Нёрдс</h2>
-      <div class="slide-item">
-        <b class="slide-item__title">Долго, дорого, скрупулезно.</b>
-        <p class="slide-item__text">
-          Математически выверенный дизайн<br>
-          для вашего сайта или мобильного приложения.
-        </p>
-        <a class="slide-item__button" href="blank.html">Узнать больше</a>
+      <div class="container">
+
+        <div class="slide-item">
+          <div class="slide-item__description">
+            <b class="slide-item__title">Долго, дорого, скрупулезно.</b>
+            <p class="slide-item__text">
+              Математически выверенный дизайн<br>
+              для вашего сайта или мобильного приложения.
+            </p>
+            <a class="slide-item__button" href="blank.html">Узнать больше</a>
+          </div>
+        </div>
+
+        <div class="slide-item visually-hidden">
+          <div class="slide-item__description">
+            <b class="slide-item__title">Любим математику как никто другой</b>
+            <p class="slide-item__text">
+              Никакого креатива, только математические формулы<br>
+              для расчета идеальных пропорций
+            </p>
+            <a class="slide-item__button" href="blank.html">Узнать больше</a>
+          </div>
+        </div>
+
+        <div class="slide-item visually-hidden">
+          <div class="slide-item__description">
+            <b class="slide-item__title">Только ночь, только хардкор</b>
+            <p class="slide-item__text">
+              Работать днем, как все? Мы против этого.<br>
+              Ближе к полуночи работа только начинается.
+            </p>
+            <a class="slide-item__button" href="blank.html">Узнать больше</a>
+          </div>
+        </div>
+
+        <ul class="slides-switches">
+          <li class="slide-radio">
+            <button class="slide-radio__button" type="button">Первый слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-radio__button" type="button">Второй слайд</button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-radio__button" type="button">Третий слайд</button>
+          </li>
+        </ul>
+
       </div>
-      <div class="slide-item visually-hidden">
-        <b class="slide-item__title">Любим математику как никто другой</b>
-        <p class="slide-item__text">
-          Никакого креатива, только математические формулы<br>
-          для расчета идеальных пропорций
-        </p>
-        <a class="slide-item__button" href="blank.html">Узнать больше</a>
-      </div>
-      <div class="slide-item visually-hidden">
-        <b class="slide-item__title">Только ночь, только хардкор</b>
-        <p class="slide-item__text">
-          Работать днем, как все? Мы против этого.<br>
-          Ближе к полуночи работа только начинается.
-        </p>
-        <a class="slide-item__button" href="blank.html">Узнать больше</a>
-      </div>
-      <ul class="slides-switches">
-        <li class="slide-radio">
-          <button class="slide-radio__button" type="button">Первый слайд</button>
-        </li>
-        <li class="slide-radio">
-          <button class="slide-radio__button" type="button">Второй слайд</button>
-        </li>
-        <li class="slide-radio">
-          <button class="slide-radio__button" type="button">Третий слайд</button>
-        </li>
-      </ul>
     </section>
 
     <section class="product-section container">
@@ -110,7 +123,7 @@
       </ul>
     </section>
 
-    <div class="about-section">
+    <div class="about-section container">
       <section class="about">
         <h2 class="visually-hidden">О нас</h2>
         <b class="about__title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
@@ -128,8 +141,8 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <img class="advantages-logo" src="img/logo.png" width="360" height="208" alt="Логотип дизайн-студия Нёрдс">
-        <p class="advantages-title">С 2004 года любим точность во всем:</p>
         <table class="advantages-table">
+          <caption class="advantages-title">С 2004 года любим точность во всем:</caption>
           <tr class="advantages-table__row">
             <td>146 <sup>%</sup></td>
             <td>100 <sup>%</sup></td>
@@ -144,7 +157,7 @@
       </section>
     </div>
 
-    <section class="partner-section">
+    <section class="partner-section container">
       <h2 class="visually-hidden">Наши клиенты</h2>
       <ul class="partner-list">
         <li class="partner-item">
@@ -229,16 +242,16 @@
     <h2 class="modal-title">Напишите нам</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
       <p class="feedback-form__item">
-        <label for="feedback-name">Ваше имя:</label>
+        <label for="feedback-name">Ваше имя:</label><br>
         <input class="feedback-form__input-name" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
       </p>
       <p class="feedback-form__item">
-        <label for="feedback-email">Ваш email:</label>
+        <label for="feedback-email">Ваш email:</label><br>
         <input class="feedback-form__input-email" type="email" name="email" id="feedback-email"
           placeholder="email@example.com">
       </p>
       <p class="feedback-form__item">
-        <label for="feedback-letter">Текст письма:</label>
+        <label for="feedback-letter">Текст письма:</label><br>
         <input class="feedback-form__input-letter" type="text" name="letter" id="feedback-letter"
           placeholder="В свободной форме">
       </p>
