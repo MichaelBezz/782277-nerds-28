@@ -558,6 +558,7 @@ img {
 
 .footer-contacts__address,
 .footer-contacts__telephone {
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -785,7 +786,8 @@ img {
 
 .catalog-container {
   display: grid;
-  grid-template-columns: 260px 760px;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
   gap: 140px;
 
   margin-top: 61px;
