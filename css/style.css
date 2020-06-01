@@ -267,10 +267,9 @@ img {
 }
 
 .product-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  flex-wrap: wrap;
 
   padding: 0;
   margin: 0;
@@ -377,9 +376,9 @@ img {
 /* About */
 
 .about-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: 660px 360px;
   justify-content: space-between;
-  align-items: center;
 
   margin-top: 80px;
   padding-top: 40px;
@@ -487,9 +486,11 @@ img {
 }
 
 .partner-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   align-items: center;
+
 
   padding: 0;
   margin: 0;
@@ -601,7 +602,8 @@ img {
 
 
 .footer-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 260px 1fr;
   align-items: center;
 
   margin: 68px auto;
@@ -818,6 +820,13 @@ img {
 
 /* Filter */
 
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
 .filter legend {
   font-size: 18px;
   font-weight: 700;
@@ -825,6 +834,24 @@ img {
   text-transform: uppercase;
   text-align: left;
   color: var(--basic-black);
+}
+
+.cost-scale {
+  width: 260px;
+  height: 80px;
+  margin-bottom: 14px;
+
+  background-color: var(--light-gray);
+}
+
+.cost-input {
+  width: 80px;
+  height: 38px;
+
+  text-align: center;
+
+  background-color: var(--light-gray);
+  border: none;
 }
 
 .cost label {
