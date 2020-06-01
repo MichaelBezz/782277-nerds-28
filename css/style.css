@@ -997,13 +997,30 @@ img {
   list-style: none;
 }
 
-/* .catalog-item {
+.catalog-item {
+  position: relative;
+
+  padding-top: 40px;
+
   background-image: url("../img/browser.svg");
   background-repeat: no-repeat;
-  background-position: top left;
-} */
+
+}
+
+.catalog-item:hover .catalog-item__description {
+  display: block;
+}
 
 .catalog-item__description {
+  display: none;
+
+  position: absolute;
+  top: 390px;
+  left: 0;
+
+  width: 360px;
+  height: 231px;
+
   background-color: var(--light-gray);
 }
 
@@ -1033,12 +1050,15 @@ img {
 }
 
 .catalog-item__button {
+  padding: 17px 72px;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-align: center;
   color: var(--basick-white);
   background-color: var(--light-red);
+
+  border-radius: 3px;
 }
 
 .catalog-item__button:hover {
