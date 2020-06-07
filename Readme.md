@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Михаил Беззапонный](https://up.htmlacademy.ru/htmlcss/28/user/782277).
-* Наставник: [Марина Удовенко](https://htmlacademy.ru/profile/id7570).
+* Наставник: [Александр Карташов](https://htmlacademy.ru/profile/id77080).
 
 ---
 
