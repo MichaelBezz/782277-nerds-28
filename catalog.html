@@ -58,31 +58,43 @@
           <fieldset class="cost">
             <legend class="cost-title">Стоимость:</legend>
             <div class="cost-scale">
-              <div class="cost-scale__min" tabindex="0" aria-label="Изменение минимальной цены"></div>
-              <div class="cost-scale__level"></div>
-              <div class="cost-scale__max" tabindex="0" aria-label="Изменение максимальной цены"></div>
+              <div class="cost-scale__level">
+                <div class="cost-scale__bar"></div>
+              </div>
+              <div class="cost-scale__toggle min" tabindex="0" aria-label="Изменение минимальной цены">
+              </div>
+              <div class="cost-scale__toggle max" tabindex="0" aria-label="Изменение максимальной цены"></div>
             </div>
-            <label class="cost-label" for="min-price">От</label>
-            <input class="cost-input" type="text" name="min-price" id="min-price" value="0">
-            <label class="cost-label" for="max-price">До</label>
-            <input class="cost-input" type="text" name="max-price" id="max-price" value="15 000">
+            <div class="cost-controls">
+              <label class="cost-label" for="min-price">От
+                <input class="cost-input" type="text" name="min-price" id="min-price" value="0">
+              </label>
+              <label class="cost-label" for="max-price">До
+                <input class="cost-input" type="text" name="max-price" id="max-price" value="15 000">
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="grid">
             <legend class="grid-title">Сетка:</legend>
             <ul class="grid-list">
               <li class="grid-radio">
-                <input class="grid-input input-radio" type="radio" name="grid" id="grid-adaptive" value="adaptive"
-                  checked>
-                <label for="grid-adaptive">Адаптивная</label>
+                <label class="grid-radio__label">
+                  <input class="grid-radio__input" type="radio" name="grid" value="adaptive" checked>
+                  <span class="grid-radio__image"></span>Адаптивная
+                </label>
               </li>
               <li class="grid-radio">
-                <input class="grid-input input-radio" type="radio" name="grid" id="grid-fixed" value="fixed">
-                <label for="grid-fixed">Фиксированная</label>
+                <label class="grid-radio__label">
+                  <input class="grid-radio__input" type="radio" name="grid" value="fixed">
+                  <span class="grid-radio__image"></span>Фиксированная
+                </label>
               </li>
               <li class="grid-radio">
-                <input class="grid-input input-radio" type="radio" name="grid" id="grid-rubber" value="rubber">
-                <label for="grid-rubber">Резиновая</label>
+                <label class="grid-radio__label">
+                  <input class="grid-radio__input" type="radio" name="grid" value="rubber">
+                  <span class="grid-radio__image"></span>Резиновая
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -91,24 +103,34 @@
             <legend class="features-title">Особенности:</legend>
             <ul class="features-list">
               <li class="features-checkbox">
-                <input class="features-input input-checkbox" type="checkbox" name="slider" id="check-slider" checked>
-                <label for="check-slider">Слайдер</label>
+                <label class="features-checkbox__label">
+                  <input class="features-checkbox__input" type="checkbox" name="slider" checked>
+                  <span class="features-checkbox__image"></span>Слайдер
+                </label>
               </li>
               <li class="features-checkbox">
-                <input class="features-input input-checkbox" type="checkbox" name="advantages" id="check-advantages">
-                <label for="check-advantages">Блок преимуществ</label>
+                <label class="features-checkbox__label">
+                  <input class="features-checkbox__input" type="checkbox" name="advantages">
+                  <span class="features-checkbox__image"></span>Блок преимуществ
+                </label>
               </li>
               <li class="features-checkbox">
-                <input class="features-input input-checkbox" type="checkbox" name="news" id="check-news" checked>
-                <label for="check-news">Новости</label>
+                <label class="features-checkbox__label">
+                  <input class="features-checkbox__input" type="checkbox" name="news" checked>
+                  <span class="features-checkbox__image"></span>Новости
+                </label>
               </li>
               <li class="features-checkbox">
-                <input class="features-input input-checkbox" type="checkbox" name="gallery" id="check-gallery">
-                <label for="check-gallery">Галерея</label>
+                <label class="features-checkbox__label">
+                  <input class="features-checkbox__input" type="checkbox" name="gallery">
+                  <span class="features-checkbox__image"></span>Галерея
+                </label>
               </li>
               <li class="features-checkbox">
-                <input class="features-input input-checkbox" type="checkbox" name="shop" id="check-shop">
-                <label for="check-shop">Корзина</label>
+                <label class="features-checkbox__label">
+                  <input class="features-checkbox__input" type="checkbox" name="shop">
+                  <span class="features-checkbox__image"></span>Корзина
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -161,7 +183,7 @@
             <div class="catalog-item__description">
               <a class="catalog-item__title" href="blank.html">Sedona</a>
               <p class="catalog-item__text">
-                Информаионный сайт<br>
+                Информационный сайт<br>
                 для туристов
               </p>
               <a class="catalog-item__button" href="blank.html" aria-label="цена за шаблон">9 900 &#8381;</a>
@@ -268,33 +290,31 @@
 
     </section>
 
-    <div class="footer-info container">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Давайте дружить!</h2>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-item__button vk" href="blank.html" aria-label="Наш паблик ВКонтакте">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item__button fb" href="blank.html" aria-label="Дружите с нами в Facebook">
-              <span class="visually-hidden">Фейсбук</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-item__button inst" href="blank.html" aria-label="Смотрите наши работы в Instagram">
-              <span class="visually-hidden">Инстаграм</span>
-            </a>
-          </li>
-        </ul>
-      </section>
+    <section class="footer-info container">
+      <h2 class="visually-hidden">Давайте дружить!</h2>
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-item__button vk" href="blank.html" aria-label="Наш паблик ВКонтакте">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-item__button fb" href="blank.html" aria-label="Дружите с нами в Facebook">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-item__button inst" href="blank.html" aria-label="Смотрите наши работы в Instagram">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
 
-      <section class="footer-promo">
+      <div class="footer-promo">
         <b class="footer-promo__title">Давайте дружить, это выгодно!</b>
         <p class="footer-promo__text">Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </div>
+      </div>
+    </section>
 
   </footer>
 
@@ -317,7 +337,7 @@
       </p>
       <button class="feedback-form__button" type="submit">Отправить</button>
     </form>
-    <button class="close-button" type="button">Закрыть</button>
+    <button class="close-button" type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>
