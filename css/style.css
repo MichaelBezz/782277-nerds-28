@@ -137,13 +137,13 @@ img {
   position: relative;
   max-width: 160px;
   padding-left: 40px;
-  margin-top: 13px;
+  padding-top: 13px;
 }
 
 .cart::before {
   content: "";
   position: absolute;
-  top: 19px;
+  top: 33px;
   left: 0;
   width: 15px;
   height: 15px;
@@ -1301,7 +1301,9 @@ img {
   box-shadow: inset 0px 3px 0px var(--button-shadow);
 }
 
-/* .pagination__item_active {
+/* .pagination__item_active a {
+  display: block;
+  box-sizing: border-box;
   background-color: transparent;
   border: 3px solid var(--icon-border);
   border-radius: 3px;
